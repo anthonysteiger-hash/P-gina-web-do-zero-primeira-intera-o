@@ -5,10 +5,34 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Blog</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="tema-escuro">
   <style>
+    :root {
+        --cor-primaria: #183C63;
+        --cor-segundaria: #b4c0ce;
+        --cor-fundo: #000000;
+        --cor-texto: #000000;
+        --cor-contraste: #ffffff;
+        --cor-botao: #ffffff;
+    }
+
+    .tema-escuro{
+        --cor-primaria: #f30000;
+        --cor-segundaria: #3c5879;
+        --cor-fundo: #000000;
+        --cor-texto: #000000;
+        --cor-contraste: #ffffff;
+        --cor-botao: #ffffff;
+    }
+    body {
+        max-width: 100vw;
+    }
     header {
-      background-color: #183C63;
-      color: #FFFFFF;
+      background-color:var(--cor-primaria);
+      color:var(--cor-contraste);
       text-align: center;
       margin: 0 auto;
       padding: 16px;
@@ -16,8 +40,8 @@
     }
 
     main {
-      background-color: #FFFFFF;
-      color: #183C63;
+      background-color:var(--cor-fundo);
+      color:var(--cor-primaria);
       margin: 0 auto;
       padding: 16px;
 
@@ -27,12 +51,19 @@
     }
     article{
       display: flex;
-
-      border: 1px solid #183C63;
+      border: 1px solid var(--cor-primaria);
 
       margin: 16px;
       gap: 16px;
       padding: 16px;
+     <p class="artigo-autor"> Por: anthony</p>
+     <p> primeiro gabinete de ministros (conselho de ministros) do Brasil imperial foi instituído em 20 de julho de 1847.</p>
+     <button>❤️ <span>0</span></button>
+     <button>👍 <span>0</span></button>
+   </div>
+    </article>
+    <article>
+      <img src="monitor.jpeg" alt="Ícone quadrado para blo
 
       flex: 1 1 30%;
     }
